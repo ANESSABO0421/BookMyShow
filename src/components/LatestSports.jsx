@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const LatestSports = () => {
   const Sports = useSelector(SelectSports);
   return (
-    <div className="px-4 sm:px-6 md:px-8 py-6">
+    <div className="px-4 sm:px-6 md:px-8 py-6" data-aos="fade-left">
       <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
         Top Games & Sports Events
       </h2>

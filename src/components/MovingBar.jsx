@@ -11,7 +11,7 @@ import banner3 from "../assets/banners/banner3.avif";
 const MovingBar = () => {
   const images = [banner2, banner3];
   return (
-    <div className="w-full max-w-[1280px] mx-auto m-10">
+    <div className="w-full max-w-[1280px] mx-auto m-10" data-aos="fade-up">
       <Swiper
         spaceBetween={10}
         slidesPerView={1}

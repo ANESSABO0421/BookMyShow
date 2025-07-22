@@ -8,7 +8,7 @@ const RecommendedMovies = () => {
   const movies = useSelector(selectMovies);
 
   return (
-    <div className="px-4 sm:px-6 md:px-8 py-6">
+    <div className="px-4 sm:px-6 md:px-8 py-6" data-aos="fade-right">
       <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
         Recommended Movies
       </h2>
@@ -35,11 +35,11 @@ const RecommendedMovies = () => {
       </Link>
 
       {/* banner image */}
-      <div className="flex items-center justify-center pt-10 sm:pt-16 md:pt-20">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 pt-10 sm:pt-16 md:pt-20 flex justify-center">
         <img
           src={banner1}
-          alt=""
-          className="w-full  object-contain rounded-lg"
+          alt="banner"
+          className="w-full max-w-7xl rounded-lg object-cover"
         />
       </div>
     </div>

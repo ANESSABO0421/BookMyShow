@@ -7,7 +7,7 @@ const LatestPlays = () => {
   const latestPlay = useSelector(selectLatestPlays);
   console.log(latestPlay);
   return (
-    <div className="px-4 sm:px-6 md:px-8 py-6">
+    <div className="px-4 sm:px-6 md:px-8 py-6" data-aos="fade-left">
       <h2 className="text-2xl sm:text-3xl font-semibold mb-4">Latest Plays</h2>
       <Link className="scroll flex gap-4 sm:gap-6 overflow-x-auto pb-2">
         {latestPlay.map((Event) => (
