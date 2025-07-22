@@ -9,6 +9,7 @@ const initialState = {
       votes: "53.8K",
       genre: "Drama/Musical/Romantic",
       image: "/assets/movies/saiyaraa.avif",
+      banner: "/assets/movies/banner1.jpg",
     },
     {
       id: 2,
@@ -17,6 +18,7 @@ const initialState = {
       votes: "58.4K",
       genre: "Action/Sci-Fi/Thriller",
       image: "/assets/movies/jurassic_world.avif",
+      banner: "/assets/movies/banner2.jpg",
     },
     {
       id: 3,
@@ -25,6 +27,7 @@ const initialState = {
       votes: "40.5K",
       genre: "Drama/Romantic",
       image: "/assets/movies/metro.avif",
+      banner: "/assets/movies/banner3.jpg",
     },
     {
       id: 4,
@@ -33,6 +36,7 @@ const initialState = {
       votes: "36.4K",
       genre: "Action/Adventure/Fantasy/Sci-Fi",
       image: "/assets/movies/superman.avif",
+      banner: "/assets/movies/banner4.jpg",
     },
     {
       id: 5,
@@ -41,6 +45,7 @@ const initialState = {
       votes: "328",
       genre: "Comedy/Thriller",
       image: "/assets/movies/paisa3.avif",
+      banner: "/assets/movies/banner5.jpg",
     },
     {
       id: 6,
@@ -49,6 +54,7 @@ const initialState = {
       votes: "111.1K",
       genre: "Action/Drama/Sports",
       image: "/assets/movies/f1.avif",
+      banner: "/assets/movies/banner6.jpg",
     },
     {
       id: 7,
@@ -57,6 +63,7 @@ const initialState = {
       votes: "205",
       genre: "Animation/Family/Fantasy",
       image: "/assets/movies/smurfs.avif",
+      banner: "/assets/movies/banner7.jpg",
     },
     {
       id: 8,
@@ -65,6 +72,7 @@ const initialState = {
       votes: "86.7K",
       genre: "Comedy/Drama/Sports",
       image: "/assets/movies/sitaare.avif",
+      banner: "/assets/movies/banner8.jpg",
     },
     {
       id: 9,
@@ -73,6 +81,7 @@ const initialState = {
       votes: "1.3K",
       genre: "Drama",
       image: "/assets/movies/tanvi.avif",
+      banner: "/assets/movies/banner9.jpg",
     },
     {
       id: 10,
@@ -81,6 +90,7 @@ const initialState = {
       votes: "108.4K Likes",
       genre: "Action/Adventure/Sci-Fi",
       image: "/assets/movies/fantastic4.avif",
+      banner: "/assets/movies/banner10.jpg",
     },
   ],
 };

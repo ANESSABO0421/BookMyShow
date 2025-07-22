@@ -13,9 +13,9 @@ const RecommendedMovies = () => {
         Recommended Movies
       </h2>
 
-      <Link className="scroll flex gap-4 sm:gap-6 overflow-x-auto pb-2">
+      <div className="scroll flex gap-4 sm:gap-6 overflow-x-auto pb-2">
         {movies.map((movie) => (
-          <div
+          <Link to={`/movies/${movie.id}`}
             key={movie.id}
             className="min-w-[200px] sm:min-w-[240px] md:min-w-[280px] bg-white"
           >
@@ -30,9 +30,9 @@ const RecommendedMovies = () => {
               </p>
               <p className="text-sm sm:text-md text-gray-600">{movie.genre}</p>
             </div>
-          </div>
+          </Link>
         ))}
-      </Link>
+      </div>
 
       {/* banner image */}
       <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 pt-10 sm:pt-16 md:pt-20 flex justify-center">

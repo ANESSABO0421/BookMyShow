@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Aos from "aos";
 import "aos/dist/aos.css"; 
+import MovieDetails from "./pages/MovieDetails";
 
 const App = () => {
   useEffect(() => {
@@ -18,6 +19,8 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="*" element={<Home />} />
+        {/* dynamic routing */}
+        <Route path="/movies/:id" element={<MovieDetails/>}/>
       </Routes>
     </div>
   );
