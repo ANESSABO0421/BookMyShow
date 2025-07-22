@@ -3,6 +3,7 @@ import movieReducer from "../features/movieSlice";
 import latestPlaysReducer from "../features/LatestPlaysSlice";
 import liveEventsReducer from "../features/LiveEventSlice";
 import SportsReducer from "../features/LatestSportsSlice";
+import ActivitiesReducer from "../features/LatestActivitiesSlice";
 
 export const store = configureStore({
   reducer: {
@@ -10,5 +11,6 @@ export const store = configureStore({
     latestPlays: latestPlaysReducer,
     liveEvents: liveEventsReducer,
     Sports: SportsReducer,
+    Activities: ActivitiesReducer,
   },
 });

@@ -4,6 +4,7 @@ import RecommendedMovies from "../components/RecommendedMovies";
 import LatestPlays from "../components/LatestPlays";
 import LiveEvents from "../components/LiveEvents";
 import LatestSports from "../components/LatestSports";
+import LatestActivities from "../components/LatestActivities";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <LatestPlays/>
       <LiveEvents/>
       <LatestSports/>
+      <LatestActivities/>
     </div>
   );
 };
