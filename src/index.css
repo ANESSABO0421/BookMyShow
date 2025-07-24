@@ -2,7 +2,7 @@
 .scroll {
   scrollbar-width: none;
 }
-html{
+html {
   scrollbar-width: none;
   scroll-behavior: smooth;
 }

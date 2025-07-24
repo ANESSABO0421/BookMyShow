@@ -13,7 +13,6 @@ const MovieDetails = () => {
   return (
     <>
       {/* Banner Section */}
-      {/* Banner Section */}
       <div
         className="relative w-full bg-no-repeat bg-cover bg-center"
         style={{ backgroundImage: `url(${movie.banner})` }}
