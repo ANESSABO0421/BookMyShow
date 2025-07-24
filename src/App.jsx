@@ -18,7 +18,7 @@ const App = () => {
     <div>
       <Navbar />
       <Routes>
-        <Route path="*" element={<Home />} />
+        <Route path="/" element={<Home />} />
         {/* dynamic routing */}
         <Route path="/movies/:id" element={<MovieDetails/>}/>
       </Routes>
