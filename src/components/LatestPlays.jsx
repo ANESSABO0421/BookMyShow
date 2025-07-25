@@ -18,7 +18,7 @@ const LatestPlays = () => {
           <Link
             key={Event.id}
             to={`/LatestPlays/${Event.id}`}
-            className="min-w-[200px] sm:min-w-[240px] snap-start"
+            className="min-w-[200px] sm:min-w-[300px] snap-start"
             onClick={() => window.scrollTo(0, 0)}
           >
             <img

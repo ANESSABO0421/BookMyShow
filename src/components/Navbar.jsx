@@ -27,34 +27,20 @@ const Navbar = () => {
 
         {/* Right-side Controls */}
         <div className="flex items-center gap-4">
-          <select
-            name="location"
-            className="outline-none text-gray-700 text-sm"
-          >
-            <option value="mumbai">Mumbai</option>
-          </select>
-          <button className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md text-sm">
+          <button className="bg-red-500 hover:bg-red-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer">
             Sign in
           </button>
-          <GiHamburgerMenu className="text-2xl text-gray-700 mr-2 cursor-pointer" />
+          <GiHamburgerMenu className="text-2xl text-gray-700 mr-2 cursor-pointer hidden max-sm:block" />
         </div>
       </div>
-      <div className="h-10 bg-[#F5F5F5] flex justify-between items-center px-7 py-2">
-        <div className="h-full">
-          <ul className="flex gap-5 items-center justify-center text-center">
+      <div className="h-10  flex justify-center bg-[#FB2C36] text-white items-center px-7 py-2 sticky top-0 z-100">
+        <div className="h-full ">
+          <ul className="hidden md:flex gap-5 md:gap-10 lg:gap-20 items-center justify-center  text-center ">
             <a href="#">Movies</a>
             <a href="#">Events</a>
             <a href="#">Plays</a>
             <a href="#">Sports</a>
             <a href="#">Activites</a>
-          </ul>
-        </div>
-        <div>
-          <ul className="flex gap-5 items-center justify-center text-center">
-            <a href="#">List Your Show</a>
-            <a href="#">Coorporate</a>
-            <a href="#">Offers</a>
-            <a href="#">Gift Card</a>
           </ul>
         </div>
       </div>

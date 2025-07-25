@@ -14,7 +14,7 @@ const MovieDetails = () => {
     <>
       {/* Banner Section */}
       <div
-        className="relative w-full bg-no-repeat bg-cover bg-center"
+        className="relative w-full bg-no-repeat bg-cover bg-center shadow-xl/30"
         style={{ backgroundImage: `url(${movie.banner})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent" />
@@ -52,7 +52,7 @@ const MovieDetails = () => {
             </p>
 
             {/* Book Tickets Button */}
-            <button className="bg-[#ff2b85] w-fit text-white font-semibold px-5 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-md hover:bg-[#e02575] transition">
+            <button className="bg-[#ff2b85] w-fit text-white font-semibold px-5 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-md hover:bg-[#e02575] transition hover:-translate-y-1 duration-300 ease-in hover:shadow-2xl cursor-pointer">
               Book Tickets
             </button>
           </div>
@@ -61,7 +61,7 @@ const MovieDetails = () => {
           <img
             src={movie.image}
             alt="Poster"
-            className="h-[240px] sm:h-[300px] md:h-[360px] lg:h-[420px] rounded-xl shadow-lg object-cover"
+            className="h-[240px] sm:h-[300px] md:h-[360px] lg:h-[420px] rounded-xl shadow-lg object-cover hover:-translate-y-1 duration-300 ease-in hover:shadow-2xl"
           />
         </div>
       </div>
