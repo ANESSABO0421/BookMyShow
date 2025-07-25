@@ -9,6 +9,7 @@ import LatestPlay from "./pages/LatestPlayDetails";
 import LatestPlayDeatails from "./pages/LatestPlayDetails";
 import Footer from "./components/Footer";
 import LatestEventDetails from "./pages/LatestEventDetails";
+import GameDetails from "./pages/GameDetails";
 
 const App = () => {
   useEffect(() => {
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/movies/:id" element={<MovieDetails />} />
         <Route path="/LatestPlays/:id" element={<LatestPlayDeatails />} />
         <Route path="/LatestEvent/:id" element={<LatestEventDetails />} />
+        <Route path="/Games/:id" element={<GameDetails />} />
       </Routes>
       <Footer />
     </div>

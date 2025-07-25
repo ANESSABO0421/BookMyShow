@@ -11,9 +11,10 @@ const LatestSports = () => {
         Top Games & Sports Events
       </h2>
 
-      <Link className="scroll flex gap-4 sm:gap-6 overflow-x-auto pb-2">
+      <div className="scroll flex gap-4 sm:gap-6 overflow-x-auto pb-2">
         {Sports.map((sport) => (
-          <div
+          <Link
+            to={`/Games/${sport.id}`}
             key={sport.id}
             className="min-w-[200px] sm:min-w-[240px] md:min-w-[280px] bg-white"
           >
@@ -26,11 +27,13 @@ const LatestSports = () => {
               <p className="text-sm sm:text-xl font-semibold text-black">
                 {sport.title}
               </p>
-              <p className="text-sm sm:text-lg text-gray-600">{sport.location}</p>
+              <p className="text-sm sm:text-lg text-gray-600">
+                {sport.location}
+              </p>
             </div>
-          </div>
+          </Link>
         ))}
-      </Link>
+      </div>
     </div>
   );
 };
