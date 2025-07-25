@@ -12,12 +12,12 @@ import LatestEventDetails from "./pages/LatestEventDetails";
 import GameDetails from "./pages/GameDetails";
 
 const App = () => {
-  useEffect(() => {
-    Aos.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
+  // useEffect(() => {
+  //   Aos.init({
+  //     duration: 1000,
+  //     once: true,
+  //   });
+  // }, []);
 
   return (
     <div>

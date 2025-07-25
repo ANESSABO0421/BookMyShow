@@ -8,7 +8,7 @@ const LatestPlays = () => {
   console.log(latestPlay);
 
   return (
-    <div className="px-4 sm:px-6 md:px-8 py-6" data-aos="fade-left">
+    <div className="px-4 sm:px-6 md:px-8 py-6" >
       <h2 className="text-2xl sm:text-3xl font-semibold mb-4 text-center sm:text-left">
         Latest Plays
       </h2>

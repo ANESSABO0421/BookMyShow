@@ -7,7 +7,7 @@ const LatestActivities = () => {
   const Activity = useSelector(SelectActivities);
   console.log(Activity);
   return (
-    <div className="px-4 sm:px-6 md:px-8 py-6" data-aos="fade-right ">
+    <div className="px-4 sm:px-6 md:px-8 py-6" >
       <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
         Activities
       </h2>
