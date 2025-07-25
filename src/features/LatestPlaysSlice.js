@@ -44,8 +44,12 @@ const initialState = {
       about:
         "A thought-provoking Marathi play that delves into the complexity of human emotions, relationships, and life's unexpected turns.",
       artists: [
-        { name: "Sonal Patil", image: "/assets/latestPlays/artist4.avif" },
-        { name: "Rohit Bhandare", image: "/assets/latestPlays/artist5.avif" },
+        { name: "Neena Kulkarni", image: "/assets/latestPlays/Neena.avif" },
+        { name: "Amrutha Subhash", image: "/assets/latestPlays/Amrutha.avif" },
+        {
+          name: "Shubangi Gokhale",
+          image: "/assets/latestPlays/Shubangi.avif",
+        },
       ],
     },
     {
@@ -66,9 +70,9 @@ const initialState = {
       about:
         "A satirical take on arranged marriages in Indian society, with witty dialogues and hilarious situations that will resonate with every generation.",
       artists: [
-        { name: "Sakhi Gokhale", image: "/assets/latestPlays/artist6.avif" },
-        { name: "Suvrat Joshi", image: "/assets/latestPlays/artist7.avif" },
-        { name: "Suraj Parasnis", image: "/assets/latestPlays/artist8.avif" },
+        { name: "Sakhi Gokhale", image: "/assets/latestPlays/Sakhi.avif" },
+        { name: "Suvrat Joshi", image: "/assets/latestPlays/Suvrat.avif" },
+        { name: "Suraj Parasnis", image: "/assets/latestPlays/Suraj.avif" },
       ],
     },
     {
@@ -89,8 +93,9 @@ const initialState = {
       about:
         "A dramatic tale of unexpected visitors, family secrets, and emotional confrontations. A gripping Marathi stage performance with stellar acting.",
       artists: [
-        { name: "Shweta Shinde", image: "/assets/latestPlays/artist9.avif" },
-        { name: "Omkar Naik", image: "/assets/latestPlays/artist10.avif" },
+        { name: "Prasad Khandekar", image: "/assets/latestPlays/prasad.avif" },
+        { name: "Namrata", image: "/assets/latestPlays/namrata.avif" },
+        { name: "Onkar Raut", image: "/assets/latestPlays/onkar.avif" },
       ],
     },
     {
@@ -111,9 +116,9 @@ const initialState = {
       about:
         "Back by popular demand! A classic Marathi farce that’s full of mistaken identities, witty comebacks, and a plot that will keep you laughing throughout.",
       artists: [
-        { name: "Bharat Jadhav", image: "/assets/latestPlays/artist11.avif" },
-        { name: "Vijay Patkar", image: "/assets/latestPlays/artist12.avif" },
-        { name: "Hemangi Kavi", image: "/assets/latestPlays/artist13.avif" },
+        { name: "Bharat Jadhav", image: "/assets/latestPlays/Bharat.png" },
+        { name: "Vijay Patkar", image: "/assets/latestPlays/Vijay.webp" },
+        { name: "Hemangi Kavi", image: "/assets/latestPlays/Hemangi.jpg" },
       ],
     },
     {
@@ -135,10 +140,14 @@ const initialState = {
         "Two contrasting characters. One intense evening. A powerful conversation that challenges ideologies, emotions, and boundaries of human thought.",
       artists: [
         {
-          name: "Madhura Velankar",
-          image: "/assets/latestPlays/artist14.avif",
+          name: "Mangesh Kadam",
+          image: "/assets/latestPlays/Mangesh.avif",
         },
-        { name: "Vikram Gokhale", image: "/assets/latestPlays/artist15.avif" },
+        {
+          name: "Leena Bhagwat",
+          image: "/assets/latestPlays/Leena bhagwat.avif",
+        },
+        { name: "Rohan", image: "/assets/latestPlays/Rohan.avif" },
       ],
     },
     {
@@ -159,9 +168,12 @@ const initialState = {
       about:
         "A heartwarming comedy about dreams, drama, and destiny. With colorful characters and a quirky narrative, this play is perfect for a fun weekend outing.",
       artists: [
-        { name: "Supriya Pathare", image: "/assets/latestPlays/artist16.avif" },
-        { name: "Anand Ingale", image: "/assets/latestPlays/artist17.avif" },
-        { name: "Pushkar Shrotri", image: "/assets/latestPlays/artist18.avif" },
+        { name: "Priya bhapat", image: "/assets/latestPlays/priya.avif" },
+        { name: "Umesh kamat", image: "/assets/latestPlays/umesh.avif" },
+        {
+          name: "Aashutosh Ghokale",
+          image: "/assets/latestPlays/Aashutosh.avif",
+        },
       ],
     },
   ],

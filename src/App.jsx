@@ -3,11 +3,12 @@ import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Aos from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 import MovieDetails from "./pages/MovieDetails";
 import LatestPlay from "./pages/LatestPlayDetails";
 import LatestPlayDeatails from "./pages/LatestPlayDetails";
 import Footer from "./components/Footer";
+import LatestEventDetails from "./pages/LatestEventDetails";
 
 const App = () => {
   useEffect(() => {
@@ -15,7 +16,7 @@ const App = () => {
       duration: 1000,
       once: true,
     });
-  }, []); 
+  }, []);
 
   return (
     <div>
@@ -23,10 +24,11 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         {/* dynamic routing */}
-        <Route path="/movies/:id" element={<MovieDetails/>}/>
-        <Route path="/LatestPlays/:id" element={<LatestPlayDeatails/>}/>
+        <Route path="/movies/:id" element={<MovieDetails />} />
+        <Route path="/LatestPlays/:id" element={<LatestPlayDeatails />} />
+        <Route path="/LatestEvent/:id" element={<LatestEventDetails />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
