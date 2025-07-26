@@ -14,7 +14,6 @@ const Home = () => {
       <LatestPlays/>
       <LiveEvents/>
       <LatestSports/>
-      <LatestActivities/>
     </div>
   );
 };
