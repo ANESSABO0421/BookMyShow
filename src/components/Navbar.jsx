@@ -10,21 +10,21 @@ const Navbar = () => {
   const toggle = () => setOpen(!open);
   return (
     <>
-      <div className="navbar flex justify-between items-center h-20 shadow-md px-6 bg-white">
+      <div className="navbar flex justify-between items-center h-20 shadow-md px-2 bg-white">
         {/* Logo Section */}
         <div className="flex items-center">
           <Link to="/">
-            <img src={logo2} alt="BookMyShow Logo" className="sm:h-20" />
+            <img src={logo2} alt="BookMyShow Logo" className="h-[150px] w-[300px] md:w-[150px] lg:h-[200px] lg:w-[200px]" />
           </Link>
         </div>
 
         {/* Search Section */}
         <div className="relative w-[400px]">
-          <BiSearchAlt2 className="absolute hidden md:flex left-3 top-1/2 transform -translate-y-1/2 text-gray-500 h-5 w-5" />
+          <BiSearchAlt2 className="absolute hidden md:hidden lg:flex left-3 top-1/2 transform -translate-y-1/2 text-gray-500 h-5 w-5" />
           <input
             type="text"
             placeholder="Search for Movies, Events, Sports and Activities"
-            className="w-[200px] hidden md:flex h-10 pl-10 pr-4 rounded-md border border-gray-300  focus:outline-none focus:ring-1 focus:ring-red-400 md:w-[400px]"
+            className="w-[200px] hidden md:hidden lg:flex    h-10 pl-10 pr-4 rounded-md border border-gray-300  focus:outline-none focus:ring-1 focus:ring-red-400 md:w-[400px]"
           />
         </div>
 

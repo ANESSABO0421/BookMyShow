@@ -52,9 +52,12 @@ const MovieDetails = () => {
             </p>
 
             {/* Book Tickets Button */}
-            <button className="bg-[#ff2b85] w-fit text-white font-semibold px-5 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-md hover:bg-[#e02575] transition hover:-translate-y-1 duration-300 ease-in hover:shadow-2xl cursor-pointer">
+            <Link
+              to={`/booking-page/${movie.id}`}
+              className="bg-[#ff2b85] w-fit text-white font-semibold px-5 py-2 sm:px-6 sm:py-3 text-sm sm:text-base rounded-md hover:bg-[#e02575] transition hover:-translate-y-1 duration-300 ease-in hover:shadow-2xl cursor-pointer"
+            >
               Book Tickets
-            </button>
+            </Link>
           </div>
 
           {/* Movie Poster */}

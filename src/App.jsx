@@ -10,6 +10,7 @@ import LatestPlayDeatails from "./pages/LatestPlayDetails";
 import Footer from "./components/Footer";
 import LatestEventDetails from "./pages/LatestEventDetails";
 import GameDetails from "./pages/GameDetails";
+import BookingPage from "./pages/BookingPage";
 
 const App = () => {
   // useEffect(() => {
@@ -29,8 +30,9 @@ const App = () => {
         <Route path="/LatestPlays/:id" element={<LatestPlayDeatails />} />
         <Route path="/LatestEvent/:id" element={<LatestEventDetails />} />
         <Route path="/Games/:id" element={<GameDetails />} />
+        <Route path="/booking-page/:id" element={<BookingPage />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
