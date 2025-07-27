@@ -6,3 +6,6 @@ html {
   scrollbar-width: none;
   scroll-behavior: smooth;
 }
+.screen-curve {
+  clip-path: ellipse(100% 40% at 50% 0%);
+}

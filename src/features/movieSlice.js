@@ -13,6 +13,8 @@ const initialState = {
       language: "Hindi",
       duration: "2h 36m",
       release: "18 Jul 2025",
+      price: "800",
+
       about:
         "An intense love story that will break your heart and heal it, too.",
       cast: [
@@ -54,6 +56,8 @@ const initialState = {
       language: "English, Hindi, Tamil, Telugu",
       duration: "2h 13m",
       release: "4 Jul 2025",
+      price: "800",
+
       about:
         "Five years after the events of Jurassic World Dominion, the planets ecology has proven largely inhospitable to dinosaurs. Those remaining exist in isolated equatorial environments with climates resembling the one in which they once thrived. The three most colossal creatures within that tropical biosphere hold the key to a drug that will bring miraculous life-saving benefits to humankind.Academy Award nominee Johansson plays skilled covert operations expert Zora Bennett, contracted to lead a skilled team on a top-secret mission to secure genetic material from the worlds three most massive dinosaurs. When Zoras operation intersects with a civilian family whose boating expedition was capsized by marauding aquatic dinos, they all find themselves stranded on an island where they come face-to-face with a sinister, shocking discovery thats been hidden from the world for decades.",
       cast: [
@@ -104,6 +108,8 @@ const initialState = {
       language: "Hindi",
       duration: "2h 42m",
       release: "4 Jul 2025",
+      price: "800",
+
       cast: [
         {
           name: "Aditya Roy Kapur",
@@ -148,6 +154,8 @@ const initialState = {
       language: "English,Hindi,Tamil,Telugu",
       duration: "2h 10m",
       release: "11 Jul 2025",
+      price: "800",
+
       about:
         "In his signature style, James Gunn takes on the original superhero in the newly imagined DC universe with a singular blend of epic action, humor and heart, delivering a Superman who`s driven by compassion and an inherent belief in the goodness of humankind.",
       cast: [
@@ -197,6 +205,8 @@ const initialState = {
       language: "Marathi",
       duration: "2h 19m",
       release: "18 Jul 2025",
+      price: "800",
+
       about:
         "Ye Re Ye Re Paisa 3 is the third and most entertaining instalment of the popular franchise, written and directed by Sanjay Jadhav. This comedy caper revolves around a group of people, driven by greed, who try to outsmart each other in a wild chase for money. Packed with high-energy storytelling, catchy music, and nonstop twists, Ye Re Ye Re Paisa 3 delivers a rollercoaster ride of comedy, chaos, and clever schemes.",
       cast: [
@@ -246,6 +256,8 @@ const initialState = {
       language: "English,Hindi,Tamil,Telugu",
       duration: "2h 35m",
       release: "27 Jul 2025",
+      price: "800",
+
       about:
         "Sonny Hayes (Brad Pitt) was FORMULA 1`s most promising phenom of the 1990s until an accident on the track nearly ended his career. Thirty years later, he`s a nomadic racer-for-hire when he`s approached by his former teammate Ruben Cervantes (Javier Bardem), owner of a struggling FORMULA 1 team that is on the verge of collapse. Ruben convinces Sonny to come back to FORMULA 1 for one last shot at saving the team and being the best in the world. He`ll drive alongside Joshua Pearce (Damson Idris), the team`s hotshot rookie intent on setting his own pace. But as the engines roar, Sonny`s past catches up with him and he finds that in FORMULA 1, your teammate is your fiercest competition—and the road to redemption is not something you can travel alone.",
 
@@ -296,6 +308,8 @@ const initialState = {
       language: "English,Hindi",
       duration: "1h 29m",
       release: "4 Jul 2025",
+      price: "800",
+
       about:
         "Get ready for a Smurfin` epic party with the Smurfs!When Papa Smurf is mysteriously taken by evil wizards, Razamel and Gargamel, Smurfette leads the Smurfs on a mission into the real world to save him. With the help of new friends, the Smurfs must discover what defines their destiny to save the universe.",
       cast: [
@@ -344,6 +358,9 @@ const initialState = {
       language: "Hindi,Telugu,English",
       duration: "2h 39m",
       release: "20 Jul 2025",
+      price: "800",
+      price: "800",
+
       cast: [
         {
           name: "Aamir Khan",
@@ -380,6 +397,8 @@ const initialState = {
       language: "Hindi",
       duration: "2h 39m",
       release: "18 Jul 2025",
+      price: "800",
+
       about:
         "In a world that saw her through a different lens, she kept shining with a light that could not be unseen. Her smile awakens hope, her heart builds courage, and her journey inspires us all. And now, she is here to meet you all. She is Tanvi: The Great.",
 
@@ -429,6 +448,8 @@ const initialState = {
       language: "English,Hindi,Tamil,Telugu",
       duration: null,
       release: "25 Jul 2025",
+      price: "800",
+
       about:
         "Marvel`s Biggest Summer Blockbuster is Here! Marvel`s first family, The Fantastic Four faces off against Galactus, Marvel`s Biggest villain after Thanos. Releasing on July 25th.",
       cast: [
