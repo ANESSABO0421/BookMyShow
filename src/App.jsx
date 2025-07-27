@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import LatestEventDetails from "./pages/LatestEventDetails";
 import GameDetails from "./pages/GameDetails";
 import BookingPage from "./pages/BookingPage";
+import UserDashboard from "./pages/User/UserDashboard";
 
 const App = () => {
   // useEffect(() => {
@@ -31,6 +32,7 @@ const App = () => {
         <Route path="/LatestEvent/:id" element={<LatestEventDetails />} />
         <Route path="/Games/:id" element={<GameDetails />} />
         <Route path="/booking-page/:id" element={<BookingPage />} />
+        <Route path="/userDashBoard" element={<UserDashboard/>}/>
       </Routes>
       {/* <Footer /> */}
     </div>

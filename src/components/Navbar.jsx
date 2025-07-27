@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import {
+  Link,
+  useLocation,
+  useNavigate,
+  useNavigation,
+} from "react-router-dom";
 import logo2 from "../assets/logo2.png";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -9,11 +14,19 @@ import { selectMovies } from "../features/movieSlice";
 import { selectLatestPlays } from "../features/LatestPlaysSlice";
 import { SelectSports } from "../features/LatestSportsSlice";
 import { selectLiveEvents } from "../features/LiveEventSlice";
+import { useClerk, UserButton, useUser } from "@clerk/clerk-react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const toggle = () => setOpen(!open);
   const [query, setQuery] = useState("");
+
+  //CLERK AUTHENTICATION
+  const { user } = useUser();
+  const { openSignIn } = useClerk();
+
+  // navigation dashboard
+  const navigate = useNavigate();
 
   const movies = useSelector(selectMovies);
   const plays = useSelector(selectLatestPlays);
@@ -31,7 +44,7 @@ const Navbar = () => {
     item.title.toLowerCase().includes(query.toLowerCase())
   );
 
-  const location = useLocation();//for removing bottom nav
+  const location = useLocation(); //for removing bottom nav
 
   return (
     <>
@@ -94,9 +107,25 @@ const Navbar = () => {
 
         {/* Right Section */}
         <div className="flex items-center gap-4 sm:px-4 md:px-2 lg:px-0">
-          <button className="bg-red-500 hidden lg:flex hover:bg-red-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer">
-            Sign in
-          </button>
+          {!user ? (
+            <button
+              onClick={openSignIn}
+              className="bg-red-500 hidden lg:flex hover:bg-red-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer"
+            >
+              Sign in
+            </button>
+          ) : (
+            <div className="relative flex items-center gap-2">
+              <UserButton />
+              <button
+                onClick={() => navigate("/userDashBoard")}
+                className="ml-2 bg-white border text-black px-4 py-2 text-sm rounded shadow hover:bg-gray-100"
+              >
+                Dashboard
+              </button>
+            </div>
+          )}
+
           <button onClick={toggle}>
             {!open ? (
               <GiHamburgerMenu className="text-2xl text-gray-700 mr-2 cursor-pointer block lg:hidden" />
@@ -135,7 +164,16 @@ const Navbar = () => {
             <Link to="/Games">Sports</Link>
           </li>
           <li>
-            <Link to="/Activities">Activities</Link>
+            {!user ? (
+              <button
+                onClick={openSignIn}
+                className="bg-red-500 hidden lg:flex hover:bg-red-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer"
+              >
+                Sign in
+              </button>
+            ) : (
+              <UserButton />
+            )}{" "}
           </li>
         </ul>
       </div>
