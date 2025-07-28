@@ -21,7 +21,7 @@ const LatestSports = () => {
             <img
               src={sport.image}
               alt={sport.title}
-              className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover rounded-lg"
+              className="w-full h-[350px] sm:h-[400px] md:h-[500px] object-cover rounded-lg"
             />
             <div className="p-2 sm:p-3">
               <p className="text-sm sm:text-xl font-semibold text-black">

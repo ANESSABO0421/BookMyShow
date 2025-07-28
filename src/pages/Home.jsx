@@ -8,7 +8,7 @@ import LatestActivities from "../components/LatestActivities";
 
 const Home = () => {
   return (
-    <div className="pt-2">
+    <div className="pt-2 lg:pt-32">
       <MovingBar />
       <RecommendedMovies/>
       <LatestPlays/>

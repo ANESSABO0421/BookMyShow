@@ -14,13 +14,13 @@ const MovieDetails = () => {
     <>
       {/* Banner Section */}
       <div
-        className="relative w-full bg-no-repeat bg-cover bg-center shadow-xl/30"
+        className="relative  w-full bg-no-repeat bg-cover bg-center shadow-xl/30"
         style={{ backgroundImage: `url(${movie.banner})` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-black/70 to-transparent " />
 
         {/* Content Wrapper */}
-        <div className="relative z-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-6 px-4 sm:px-8 md:px-12 lg:px-20 py-10 min-h-[500px]">
+        <div className="relative z-10 flex flex-col-reverse lg:flex-row items-center justify-between gap-6 px-4 sm:px-8 md:px-12 lg:px-20 pt-20 sm:pt-24 pb-10 min-h-[500px]">
           {/* Text Info */}
           <div className="text-white flex flex-col gap-5 w-full lg:w-1/2">
             {/* Title */}

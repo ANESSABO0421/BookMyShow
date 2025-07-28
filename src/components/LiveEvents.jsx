@@ -20,7 +20,7 @@ const LiveEvents = () => {
             <img
               src={Event.img}
               alt={Event.title}
-              className="w-full h-[300px] sm:h-[400px] md:h-[500px] object-cover rounded-lg"
+              className="w-full h-[350px] sm:h-[400px] md:h-[500px] object-cover rounded-lg"
             />
             <div className="p-2 sm:p-3">
               <p className="text-lg sm:text-xl font-semibold truncate">

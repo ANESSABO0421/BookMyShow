@@ -21,7 +21,7 @@ const LatestPlayDetails = () => {
   return (
     <div className="flex flex-col lg:flex-row min-h-screen p-4 gap-6">
       {/* Left Section */}
-      <div className="lg:w-2/3 flex flex-col items-start gap-5">
+      <div className="lg:w-2/3 flex flex-col items-start gap-5 mt-20">
         <h1 className="text-4xl font-bold">{play.title}</h1>
 
         <img
@@ -51,8 +51,8 @@ const LatestPlayDetails = () => {
       </div>
 
       {/* Right Section */}
-      <div className="lg:w-1/3 w-full mt-15">
-        <div className=" bg-[#FB2C36]  rounded-3xl w-[350px] sticky top-4 shadow-lg">
+      <div className="lg:w-1/3 w-full mt-35">
+        <div className=" bg-[#FB2C36]  rounded-3xl w-[350px] sticky top-20 shadow-lg">
           <div className="h-full p-6 flex flex-col gap-6 text-white">
             <span className="flex gap-2 items-center text-lg">
               <FaCalendarAlt />

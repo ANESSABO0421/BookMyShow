@@ -12,6 +12,7 @@ import LatestEventDetails from "./pages/LatestEventDetails";
 import GameDetails from "./pages/GameDetails";
 import BookingPage from "./pages/BookingPage";
 import UserDashboard from "./pages/User/UserDashboard";
+import Layout from "./pages/User/Layout";
 
 const App = () => {
   // useEffect(() => {
@@ -32,9 +33,11 @@ const App = () => {
         <Route path="/LatestEvent/:id" element={<LatestEventDetails />} />
         <Route path="/Games/:id" element={<GameDetails />} />
         <Route path="/booking-page/:id" element={<BookingPage />} />
-        <Route path="/userDashBoard" element={<UserDashboard/>}/>
+        <Route path="/user" element={<Layout/>}>
+        
+        </Route>
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

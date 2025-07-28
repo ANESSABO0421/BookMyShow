@@ -28,14 +28,14 @@ const BookingPage = () => {
   return (
     <div className="flex flex-col max-h-full min-h-screen bg-gray-50">
       {/* Title */}
-      <div className="text-center py-6 px-4">
+      <div className="text-center py-6 px-4 mt-20">
         <h1 className="text-3xl sm:text-4xl font-bold text-indigo-700">
           {movie.title}
         </h1>
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col lg:flex-row justify-center items-center gap-6 px-4">
+      <div className="flex flex-col lg:flex-row justify-center items-center gap-6 px-4 ">
         {/* Left section */}
         <div className="flex-1 w-full flex justify-center">
           <img
@@ -46,7 +46,7 @@ const BookingPage = () => {
         </div>
 
         {/* Right Selection */}
-        <div className="flex-1 w-full px-4 mt-4 lg:mt-0">
+        <div className="flex-1 w-full px-4 mt-4 lg:mt-20">
           {/* Screen */}
           <div className="flex justify-center items-center mb-6">
             <div className="w-[90%] sm:w-[70%] h-8 rounded-b-[100%] bg-gradient-to-r from-gray-400 to-gray-600 shadow-inner relative">

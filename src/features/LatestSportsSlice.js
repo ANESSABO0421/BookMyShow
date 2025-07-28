@@ -73,22 +73,22 @@ const initialState = {
       about:
         "The Infinity Chess Championship is a premier online chess event known for its competitive spirit and attractive prize offerings. Open to all chess lovers, the tournament tests intellect, concentration, and planning over multiple elimination rounds. With prestigious rankings, digital certificates, and a strong prize pool, this event is a must-attend for players seeking serious recognition in the online chess community.",
     },
+    // {
+    //   id: 6,
+    //   title: "STRIDE FOR PRIDE Marathon",
+    //   date: "Sun, 27 Jul",
+    //   description: "MEDAL | TROPHY",
+    //   location: "Your Place and Your Time: India",
+    //   category: "marathon",
+    //   isOnline: true,
+    //   prizePool: null,
+    //   image: "/assets/Sports/img7.avif",
+    //   banner: "/assets/Sports/banner6.avif",
+    //   about:
+    //     "Stride For Pride is a virtual marathon designed to promote diversity, inclusivity, and personal achievement. Participants can complete their run at any location and receive medals or trophies upon submission of results. This event supports various social causes and encourages runners to step forward for pride, identity, and representation. It’s not just about distance — it's about running for something that matters.",
+    // },
     {
       id: 6,
-      title: "STRIDE FOR PRIDE Marathon",
-      date: "Sun, 27 Jul",
-      description: "MEDAL | TROPHY",
-      location: "Your Place and Your Time: India",
-      category: "marathon",
-      isOnline: true,
-      prizePool: null,
-      image: "/assets/Sports/img7.avif",
-      banner: "/assets/Sports/banner6.avif",
-      about:
-        "Stride For Pride is a virtual marathon designed to promote diversity, inclusivity, and personal achievement. Participants can complete their run at any location and receive medals or trophies upon submission of results. This event supports various social causes and encourages runners to step forward for pride, identity, and representation. It’s not just about distance — it's about running for something that matters.",
-    },
-    {
-      id: 7,
       title: "Mahakumbh Year 2025 Marathon",
       date: "Wed, 23 Jul onwards",
       description: "2025 YOUR LOCATION YOUR TIME",
@@ -97,7 +97,7 @@ const initialState = {
       isOnline: true,
       prizePool: null,
       image: "/assets/Sports/img8.avif",
-      banner: "/assets/Sports/banner7.avif",
+      banner: "/assets/Sports/banner6.avif",
       about:
         "As part of the grand Mahakumbh 2025 celebrations, this virtual marathon offers a spiritual and cultural running experience for individuals across India. It emphasizes the values of health, tradition, and discipline while connecting participants with the spirit of one of the world's oldest religious gatherings. Whether you're running in your village or city, this event invites you to be part of something larger than yourself.",
     },
