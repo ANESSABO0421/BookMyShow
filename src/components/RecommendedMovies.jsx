@@ -15,12 +15,13 @@ const RecommendedMovies = () => {
             Recommended Movies
           </h2>
 
-          <div className="scroll flex gap-4 sm:gap-6 overflow-x-auto pb-2">
+          <div className="scroll flex gap-4 sm:gap-6 overflow-x-auto pb-2" data-aos="fade-in">
             {movies.map((movie) => (
               <Link
                 to={`/movies/${movie.id}`}
                 key={movie.id}
                 className="min-w-[200px] sm:min-w-[240px] md:min-w-[280px] bg-white"
+                onClick={()=>window.scrollTo(0,0)}
               >
                 <img
                   src={movie.image}

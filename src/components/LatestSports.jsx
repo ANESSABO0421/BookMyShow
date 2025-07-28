@@ -6,17 +6,20 @@ import { Link } from "react-router-dom";
 const LatestSports = () => {
   const Sports = useSelector(SelectSports);
   return (
-    <div className="px-4 sm:px-6 md:px-8 py-6" >
+    <>
+    <section id="sports">
+    <div className="px-4 sm:px-6 md:px-8 py-6">
       <h2 className="text-2xl sm:text-3xl font-semibold mb-4">
         Top Games & Sports Events
       </h2>
 
-      <div className="scroll flex gap-4 sm:gap-6 overflow-x-auto pb-2">
+      <div className="scroll flex gap-4 sm:gap-6 overflow-x-auto pb-2" data-aos="fade-in">
         {Sports.map((sport) => (
           <Link
             to={`/Games/${sport.id}`}
             key={sport.id}
             className="min-w-[200px] sm:min-w-[240px] md:min-w-[280px] bg-white"
+            onClick={() => window.scrollTo(0, 0)}
           >
             <img
               src={sport.image}
@@ -35,6 +38,8 @@ const LatestSports = () => {
         ))}
       </div>
     </div>
+    </section>
+    </>
   );
 };
 

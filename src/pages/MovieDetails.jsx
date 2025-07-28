@@ -64,7 +64,7 @@ const MovieDetails = () => {
           <img
             src={movie.image}
             alt="Poster"
-            className="h-[240px] sm:h-[300px] md:h-[360px] lg:h-[420px] rounded-xl shadow-lg object-cover hover:-translate-y-1 duration-300 ease-in hover:shadow-2xl"
+            className="h-[240px] mt-5 sm:h-[300px] md:h-[360px] lg:h-[420px] rounded-xl shadow-lg object-cover hover:-translate-y-1 duration-300 ease-in hover:shadow-2xl"
           />
         </div>
       </div>
@@ -119,6 +119,38 @@ const MovieDetails = () => {
               </div>
             ))}
           </div>
+        </div>
+        <hr className="border-gray-300" />
+        {/* terms and condition */}
+        <div className="mt-6 p-4 bg-gray-100 border border-gray-300 rounded-lg">
+          <h3 className="text-xl font-semibold mb-2 text-gray-800">
+            Terms & Conditions
+          </h3>
+          <ul className="list-disc list-inside text-gray-600 space-y-1 text-base">
+            <li>Tickets once booked cannot be canceled or refunded.</li>
+            <li>Please carry a valid ID proof for entry to the event.</li>
+            <li>Event details are subject to change without prior notice.</li>
+            <li>Outside food or beverages are not allowed inside the venue.</li>
+            <li>Follow all COVID-19 safety protocols as required.</li>
+            <li>
+              Entry will be denied if the ticket is tampered or duplicated.
+            </li>
+            <li>
+              The organizer reserves the right to admission and expulsion.
+            </li>
+            <li>
+              Misbehavior or causing disturbance during the event may lead to
+              removal without refund.
+            </li>
+            <li>
+              Children below a certain age may require parental supervision or
+              may not be allowed.
+            </li>
+            <li>
+              By booking, you agree to the collection of your data for contact
+              and updates.
+            </li>{" "}
+          </ul>
         </div>
         <hr className="border-gray-300" />
 

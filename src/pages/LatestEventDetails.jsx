@@ -24,7 +24,7 @@ const LatestEventDetails = () => {
   return (
     <div className="flex flex-col lg:flex-row min-h-screen p-4 gap-6 pt-24">
       {/* Left Section */}
-      <div className="lg:w-2/3 flex flex-col items-start gap-6">
+      <div className="lg:w-2/3 flex flex-col items-start gap-6 mt-1">
         <h1 className="text-4xl font-bold">{event.title}</h1>
 
         <img
@@ -60,6 +60,37 @@ const LatestEventDetails = () => {
             </div>
           </div>
         )}
+        {/* terms and condition */}
+        <div className="mt-6 p-4 bg-gray-100 border border-gray-300 rounded-lg">
+          <h3 className="text-xl font-semibold mb-2 text-gray-800">
+            Terms & Conditions
+          </h3>
+          <ul className="list-disc list-inside text-gray-600 space-y-1 text-base">
+            <li>Tickets once booked cannot be canceled or refunded.</li>
+            <li>Please carry a valid ID proof for entry to the event.</li>
+            <li>Event details are subject to change without prior notice.</li>
+            <li>Outside food or beverages are not allowed inside the venue.</li>
+            <li>Follow all COVID-19 safety protocols as required.</li>
+            <li>
+              Entry will be denied if the ticket is tampered or duplicated.
+            </li>
+            <li>
+              The organizer reserves the right to admission and expulsion.
+            </li>
+            <li>
+              Misbehavior or causing disturbance during the event may lead to
+              removal without refund.
+            </li>
+            <li>
+              Children below a certain age may require parental supervision or
+              may not be allowed.
+            </li>
+            <li>
+              By booking, you agree to the collection of your data for contact
+              and updates.
+            </li>{" "}
+          </ul>
+        </div>
       </div>
 
       {/* Right Section */}

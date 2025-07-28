@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import {
-  Link,
-  useLocation,
-  useNavigate,
-} from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo2 from "../assets/logo2.png";
 import { BiSearchAlt2 } from "react-icons/bi";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -117,21 +113,21 @@ const Navbar = () => {
             <div className="relative flex items-center gap-2">
               <UserButton />
               <button
-                onClick={() => navigate("/userDashBoard")}
-                className="ml-2 bg-white border text-black px-4 py-2 text-sm rounded shadow hover:bg-gray-100"
+                onClick={() => navigate("/user")}
+                className="ml-2 hidden lg:flex bg-white border text-black px-4 py-2 text-sm rounded shadow hover:bg-gray-100"
               >
                 Dashboard
               </button>
             </div>
           )}
 
-          <button onClick={toggle}>
+         {location.pathname==="/" && <button onClick={toggle}>
             {!open ? (
               <GiHamburgerMenu className="text-2xl text-gray-700 mr-2 cursor-pointer block lg:hidden" />
             ) : (
               <FaWindowClose className="text-2xl text-gray-700 mr-2 cursor-pointer block lg:hidden" />
             )}
-          </button>
+          </button>}
         </div>
       </div>
 
@@ -149,16 +145,8 @@ const Navbar = () => {
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <ul className="flex justify-center items-center flex-col gap-20 text-4xl">
-          <li className="flex flex-col gap-20">
-            <a href="#recommendedMovies">Movies</a>
-
-            <a href="/LatestEvent">Events</a>
-
-            <a href="#latestplay">Plays</a>
-
-            <a href="/Games">Sports</a>
-
+        <ul className="flex justify-center items-center flex-col gap-15 text-4xl">
+          <li className="flex flex-col gap-20 items-center justify-center">
             {!user ? (
               <button
                 onClick={openSignIn}
@@ -169,6 +157,21 @@ const Navbar = () => {
             ) : (
               <UserButton />
             )}
+            <a href="#recommendedMovies" onClick={toggle}>
+              Movies
+            </a>
+
+            <a href="#events" onClick={toggle}>
+              Events
+            </a>
+
+            <a href="#latestplay" onClick={toggle}>
+              Plays
+            </a>
+
+            <a href="#sports" onClick={toggle}>
+              Sports
+            </a>
           </li>
         </ul>
       </div>

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/Home";
 import Aos from "aos";
 import "aos/dist/aos.css";
@@ -15,16 +15,22 @@ import UserDashboard from "./pages/User/UserDashboard";
 import Layout from "./pages/User/Layout";
 
 const App = () => {
-  // useEffect(() => {
-  //   Aos.init({
-  //     duration: 1000,
-  //     once: true,
-  //   });
-  // }, []);
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
+  const location = useLocation();
+
+  const hideNavbarPaths = ["/user"];
+
+  const shouldShowNavbar = !hideNavbarPaths.includes(location.pathname); //current path name is compared to the /user
 
   return (
     <div>
-      <Navbar />
+      {shouldShowNavbar && <Navbar />}
       <Routes>
         <Route path="/" element={<Home />} />
         {/* dynamic routing */}
@@ -33,11 +39,9 @@ const App = () => {
         <Route path="/LatestEvent/:id" element={<LatestEventDetails />} />
         <Route path="/Games/:id" element={<GameDetails />} />
         <Route path="/booking-page/:id" element={<BookingPage />} />
-        <Route path="/user" element={<Layout/>}>
-        
-        </Route>
+        <Route path="/user" element={<Layout />}></Route>
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
