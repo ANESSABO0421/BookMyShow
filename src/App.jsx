@@ -13,6 +13,7 @@ import GameDetails from "./pages/GameDetails";
 import BookingPage from "./pages/BookingPage";
 import UserDashboard from "./pages/User/UserDashboard";
 import Layout from "./pages/User/Layout";
+import MyBooking from "./pages/User/MyBooking";
 
 const App = () => {
   useEffect(() => {
@@ -24,7 +25,7 @@ const App = () => {
 
   const location = useLocation();
 
-  const hideNavbarPaths = ["/user"];
+  const hideNavbarPaths = ["/user", "/user/userDashboard", "/user/Mybooking"];
 
   const shouldShowNavbar = !hideNavbarPaths.includes(location.pathname); //current path name is compared to the /user
 
@@ -39,7 +40,10 @@ const App = () => {
         <Route path="/LatestEvent/:id" element={<LatestEventDetails />} />
         <Route path="/Games/:id" element={<GameDetails />} />
         <Route path="/booking-page/:id" element={<BookingPage />} />
-        <Route path="/user" element={<Layout />}></Route>
+        <Route path="/user" element={<Layout />}>
+          <Route path="/user/userDashboard" element={<UserDashboard />} />
+          <Route path="/user/Mybooking" element={<MyBooking />} />
+        </Route>
       </Routes>
       {/* <Footer /> */}
     </div>

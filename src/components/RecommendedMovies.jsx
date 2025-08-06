@@ -45,7 +45,7 @@ const RecommendedMovies = () => {
             <img
               src={banner1}
               alt="banner"
-              className="w-full max-w-7xl rounded-lg object-cover"
+              className="w-full h-[50px]  max-w-7xl rounded-lg object-contain"
             />
           </div>
         </div>

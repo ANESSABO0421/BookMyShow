@@ -10,20 +10,29 @@ const UserNavbar = () => {
   };
   return (
     <>
-      <div className="user-navbar h-18 flex justify-between items-center px-4 py-3 bg-red-500">
+      <div className="user-navbar fixed w-full z-20 h-18 flex justify-between items-center px-4 py-3 bg-red-500">
         <img src={logo2} alt="" className="flex h-30 " />
         <button onClick={toggle} className="flex lg:hidden">
-          {!open ? <GiHamburgerMenu className="text-white"/> : <FaWindowClose />}
+          {!open ? (
+            <GiHamburgerMenu className="text-white" />
+          ) : (
+            <FaWindowClose />
+          )}
         </button>
-        {open && <div className="fixed bg-black inset-0 opacity-50 z-10" onClick={toggle}></div>}
+        {open && (
+          <div
+            className="fixed bg-black  opacity-50 z-10"
+            onClick={toggle}
+          ></div>
+        )}
       </div>
       {/* sidebar */}
       <div
-        className={`fixed top-0 right-0 bg-white h-full w-64 z-200 transition-transform ${
+        className={`fixed top-[72px] right-0 bg-red-500 h-full w-full z-20 transition-transform duration-300 ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
-
+        
       </div>
     </>
   );

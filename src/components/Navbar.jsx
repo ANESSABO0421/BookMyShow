@@ -121,13 +121,15 @@ const Navbar = () => {
             </div>
           )}
 
-         {location.pathname==="/" && <button onClick={toggle}>
-            {!open ? (
-              <GiHamburgerMenu className="text-2xl text-gray-700 mr-2 cursor-pointer block lg:hidden" />
-            ) : (
-              <FaWindowClose className="text-2xl text-gray-700 mr-2 cursor-pointer block lg:hidden" />
-            )}
-          </button>}
+          {location.pathname === "/" && (
+            <button onClick={toggle}>
+              {!open ? (
+                <GiHamburgerMenu className="text-2xl text-gray-700 mr-2 cursor-pointer block lg:hidden" />
+              ) : (
+                <FaWindowClose className="text-2xl text-gray-700 mr-2 cursor-pointer block lg:hidden" />
+              )}
+            </button>
+          )}
         </div>
       </div>
 
@@ -179,11 +181,11 @@ const Navbar = () => {
       {/* Bottom Nav */}
       {location.pathname === "/" && (
         <div className="h-10 lg:flex hidden justify-center bg-[#FB2C36] text-white items-center px-7 py-2 z-50 fixed top-20 w-full">
-          <ul className="flex gap-5 items-center justify-center text-center">
-            <a href="#">Movies</a>
-            <a href="#">Events</a>
-            <a href="#">Plays</a>
-            <a href="#">Sports</a>
+          <ul className="flex gap-[100px] items-center justify-center text-center">
+            <a href="#recommendedMovies">Movies</a>
+            <a href="#events">Events</a>
+            <a href="#latestplay">Plays</a>
+            <a href="#sports">Sports</a>
           </ul>
         </div>
       )}
