@@ -28,6 +28,7 @@ const LatestPlayDetails = () => {
           src={play.banner}
           alt="banner"
           className="w-full max-h-[500px] rounded-xl object-cover shadow-2xl"
+          data-aos="flip-left"
         />
 
         {/* About Section */}

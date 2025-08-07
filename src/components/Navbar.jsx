@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import logo2 from "../assets/logo2.png";
 import { BiSearchAlt2 } from "react-icons/bi";
@@ -15,14 +15,34 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const toggle = () => setOpen(!open);
   const [query, setQuery] = useState("");
+  const [dropDown, setDropDown] = useState(false);
+  const searchAreaRef = useRef();
 
-  //CLERK AUTHENTICATION
+  // Show/hide dropdown based on query
+  useEffect(() => {
+    setDropDown(query.length > 0);
+  }, [query]);
+
+  // Hide dropdown on clicking outside search area
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        searchAreaRef.current &&
+        !searchAreaRef.current.contains(event.target)
+      ) {
+        setDropDown(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  // Clerk authentication
   const { user } = useUser();
   const { openSignIn } = useClerk();
-
-  // navigation dashboard
   const navigate = useNavigate();
 
+  // Redux selectors
   const movies = useSelector(selectMovies);
   const plays = useSelector(selectLatestPlays);
   const sports = useSelector(SelectSports);
@@ -39,7 +59,7 @@ const Navbar = () => {
     item.title.toLowerCase().includes(query.toLowerCase())
   );
 
-  const location = useLocation(); //for removing bottom nav
+  const location = useLocation();
 
   return (
     <>
@@ -51,22 +71,28 @@ const Navbar = () => {
             <img
               src={logo2}
               alt="BookMyShow Logo"
-              className="h-[150px] w-[180px] md:w-[150px] lg:h-[200px] lg:w-[200px]"
+              className="h-[130px] w-[130px] md:w-[150px] lg:h-[200px] lg:w-[200px]"
             />
           </Link>
         </div>
 
-        {/* Search Bar */}
-        <div className="relative w-[400px] hidden lg:flex">
+        {/* Search Bar with dropdown */}
+        <div className="relative w-[400px] hidden lg:flex" ref={searchAreaRef}>
           <BiSearchAlt2 className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-500 h-5 w-5" />
           <input
             type="text"
             placeholder="Search for Movies, Events, Sports and Activities"
             className="w-[400px] h-10 pl-10 pr-4 rounded-md border border-gray-300 focus:outline-none focus:ring-1 focus:ring-red-400"
             value={query}
-            onChange={(e) => setQuery(e.target.value)}
+            onChange={(e) => {
+              setQuery(e.target.value);
+              setDropDown(true);
+            }}
+            onFocus={() => {
+              if (query) setDropDown(true);
+            }}
           />
-          {query && (
+          {dropDown && (
             <div className="absolute z-50 top-full mt-2 w-full bg-white border border-gray-300 rounded-lg shadow-lg max-h-60 overflow-y-auto">
               {results.length > 0 ? (
                 results.map((item) => (
@@ -83,6 +109,10 @@ const Navbar = () => {
                         ? `/LatestEvent/${item.id}`
                         : "#"
                     }
+                    onClick={() => {
+                      setQuery("");
+                      setDropDown(false);
+                    }}
                     className="block px-4 py-3 hover:bg-gray-100 border-b last:border-none"
                   >
                     <div className="font-semibold text-gray-800 ">
@@ -114,7 +144,7 @@ const Navbar = () => {
               <UserButton />
               <button
                 onClick={() => navigate("/user")}
-                className="ml-2 hidden lg:flex bg-white border text-black px-4 py-2 text-sm rounded shadow hover:bg-gray-100"
+                className="ml-2  lg:flex bg-white border text-black px-4 py-2 text-sm rounded shadow hover:bg-gray-100"
               >
                 Dashboard
               </button>
@@ -162,15 +192,12 @@ const Navbar = () => {
             <a href="#recommendedMovies" onClick={toggle}>
               Movies
             </a>
-
             <a href="#events" onClick={toggle}>
               Events
             </a>
-
             <a href="#latestplay" onClick={toggle}>
               Plays
             </a>
-
             <a href="#sports" onClick={toggle}>
               Sports
             </a>

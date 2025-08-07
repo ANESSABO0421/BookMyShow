@@ -65,6 +65,7 @@ const MovieDetails = () => {
             src={movie.image}
             alt="Poster"
             className="h-[240px] mt-5 sm:h-[300px] md:h-[360px] lg:h-[420px] rounded-xl shadow-lg object-cover hover:-translate-y-1 duration-300 ease-in hover:shadow-2xl"
+            data-aos="flip-left"
           />
         </div>
       </div>

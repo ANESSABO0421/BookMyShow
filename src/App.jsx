@@ -41,11 +41,12 @@ const App = () => {
         <Route path="/Games/:id" element={<GameDetails />} />
         <Route path="/booking-page/:id" element={<BookingPage />} />
         <Route path="/user" element={<Layout />}>
-          <Route path="/user/userDashboard" element={<UserDashboard />} />
-          <Route path="/user/Mybooking" element={<MyBooking />} />
+          <Route index element={<UserDashboard />} />
+          <Route path="userDashboard" element={<UserDashboard />} />
+          <Route path="myBooking" element={<MyBooking />} />
         </Route>
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };

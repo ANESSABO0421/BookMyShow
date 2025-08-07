@@ -13,7 +13,7 @@ const LatestSports = () => {
         Top Games & Sports Events
       </h2>
 
-      <div className="scroll flex gap-4 sm:gap-6 overflow-x-auto pb-2" data-aos="fade-in">
+      <div className="scroll flex gap-4 sm:gap-6 overflow-x-auto pb-2" data-aos="flip-left">
         {Sports.map((sport) => (
           <Link
             to={`/Games/${sport.id}`}

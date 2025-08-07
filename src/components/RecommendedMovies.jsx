@@ -15,7 +15,7 @@ const RecommendedMovies = () => {
             Recommended Movies
           </h2>
 
-          <div className="scroll flex gap-4 sm:gap-6 overflow-x-auto pb-2" data-aos="fade-in">
+          <div className="scroll flex gap-4 sm:gap-6 overflow-x-auto pb-2" data-aos="flip-left">
             {movies.map((movie) => (
               <Link
                 to={`/movies/${movie.id}`}
@@ -27,6 +27,7 @@ const RecommendedMovies = () => {
                   src={movie.image}
                   alt={movie.title}
                   className="w-full h-[350px] sm:h-[400px] md:h-[500px] object-cover rounded-lg"
+                  
                 />
                 <div className="p-2 sm:p-3">
                   <p className="text-lg sm:text-xl font-semibold truncate">
@@ -41,11 +42,11 @@ const RecommendedMovies = () => {
           </div>
 
           {/* banner image */}
-          <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 pt-10 sm:pt-16 md:pt-20 flex justify-center">
+          <div className="w-full px-4  sm:px-6 md:px-8 lg:px-10 pt-10 sm:pt-16 md:pt-20 flex justify-center">
             <img
               src={banner1}
               alt="banner"
-              className="w-full h-[50px]  max-w-7xl rounded-lg object-contain"
+              className="w-full h-[100px]  max-w-7xl rounded-lg object-contain"
             />
           </div>
         </div>
