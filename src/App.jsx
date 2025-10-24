@@ -18,7 +18,7 @@ import MyBooking from "./pages/User/MyBooking";
 const App = () => {
   useEffect(() => {
     Aos.init({
-      duration: 1000,
+      duration: 5000,
       once: true,
     });
   }, []);

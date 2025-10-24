@@ -137,14 +137,14 @@ const Navbar = () => {
               onClick={openSignIn}
               className="bg-red-500 hidden lg:flex hover:bg-red-600 text-white px-4 py-2 rounded-md text-sm cursor-pointer"
             >
-              Sign in
+              Sign ins
             </button>
           ) : (
             <div className="relative flex items-center gap-2">
               <UserButton />
               <button
                 onClick={() => navigate("/user")}
-                className="ml-2  lg:flex bg-white border text-black px-4 py-2 text-sm rounded shadow hover:bg-gray-100"
+                className="ml-2 k lg:flex bg-white border text-black px-4 py-2 text-sm rounded shadow hover:bg-gray-100"
               >
                 Dashboard
               </button>
